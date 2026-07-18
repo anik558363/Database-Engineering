@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    ডেটাবেজ ACID প্রোপারটিজ
+
+
+    # Atomicity
+
+
+    -> holeay sobe hobeay na holeay kico hobeay na?
+
+
+    Sale
+
+    -> Invoice 
+    -> Invoice List
+    -> Product Stock Change
+    -> Customer Sales History Change
+
+
+    End To End Successful Transaction
+
+
+
+    # Consistency
+
+    -> Product 01 -> Stock 10 -> Sell 01 -> Stock 09 -> Product 02 -> Stock 20 -> Sell 02 -> Stock 18
+
+    -> Stock Change According to The Logic qty, remaining qty = Price 500
+    -> Invoice Data Store = 500
+    -> Invoice_Product Store = 500
+    -> Product Return
+
+
+
+
+    # Isolation
+
+    - Many Transactions run at the same time
+
+
+    # Durability
+
+    - Crash, Off, Restart, Error, Down
+
+
+
+
+</body>
+</html>

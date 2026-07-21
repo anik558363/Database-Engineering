@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    প্রাইমারি (SQL) এবং সেকেন্ডারি (Redis) ডেটাবেজ 
+
+
+    প্রাইমারি ডেটাবেজ
+    
+    - Main Source of Truth
+    - SQL MYSQL, PostgreSQL
+    - Data Permanent
+    - ACID
+
+
+    সেকেন্ডারি ডেটাবেজ (Redis)  
+
+    - Temporary Data
+    - Cache
+    - Session
+    - API Response Cache
+    - Queue, Jobs
+    - Cache Server
+
+
+   প্রাইমারি (SQL) ও সেকেন্ডারি (Redis) ডেটাবেজ কীভাবে একসাথে ব্যবহার করে
+
+   Clear ---> Redis(Expire, Action, Action Invalid)
+   Take Action For Clear সেকেন্ডারি (Redis)
+   Clear ----> 0.000KB
+
+
+   সেকেন্ডারি (Redis) ডেটাবেজ কেন গুরুত্বপূর্ণ?
+
+   - Performance Optimize, Scale, Huge Traffice
+   - Radis KEY:VALUE Pair --> Fastest Ceach System
+   - SQL Disk
+   - Database Load, 10,000 Request aleay Prote bar SQL ay jaeteay hoi na?
+   - Page First loade hoi
+   - Background Job First Process kora jaeay 
+
+
+</body>
+</html>

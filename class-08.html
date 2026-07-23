@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    1. create new database sql query
+
+
+    CREATE DATABASE database_name;
+
+
+    2. show all database 
+
+
+    SELECT datname FROM pg_database
+
+
+
+    3.  Delete old data sql query
+
+    DROP DATABASE my_first_database1
+    DROP DATABASE my_first_database1 with (force)
+
+
+
+    4. understand encoding
+    
+    CREATE DATABASE my_first_database2 WITH encoding = "UTF8"
+
+    -- UTF8, UTF16, UTF32
+-- CREATE DATABASE my_first_database2 WITH encoding = "UTF8" TEMPLATE = template0
+
+
+
+
+</body>
+</html>

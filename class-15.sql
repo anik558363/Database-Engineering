@@ -13,7 +13,7 @@
 
 -- SELECT * FROM employess;
 
--- SELECT id, date_of_joining, full_name FROM employess 
+SELECT id, date_of_joining, full_name FROM employess 
 
 -- SELECT * FROM employess WHERE salary <= 19000
 
@@ -32,4 +32,4 @@
 -- DELETE FROM employess
 
 
-TRUNCATE Table employess
+-- TRUNCATE Table employess

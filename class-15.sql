@@ -11,9 +11,9 @@
 -- DELETE FROM employess WHERE full_name = 'Apu Mondal';
 
 
--- SELECT * FROM employess;
+SELECT * FROM employess;
 
-SELECT id, date_of_joining, full_name FROM employess 
+-- SELECT id, date_of_joining, full_name FROM employess 
 
 -- SELECT * FROM employess WHERE salary <= 19000
 

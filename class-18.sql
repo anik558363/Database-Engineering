@@ -14,4 +14,4 @@
 
 
 
-SELECT count(DISTINCT salary) as unique_salary FROM employess
+-- SELECT count(DISTINCT salary) as unique_salary FROM employess

@@ -4,7 +4,7 @@
 
 
 
--- INSERT INTO employess (full_name, salary, date_of_joining) VALUES ( 'Arpon Mondal', 19000, '2026-01-31'),( 'Apu Mondal', 19000, '2026-07-31'), ( 'Emon Mondal', 18000, '2026-05-31');   ----- multiple value insert
+INSERT INTO employess (full_name, salary, date_of_joining) VALUES ( 'Arpon Mondal', 19000, '2026-01-31'),( 'Apu Mondal', 19000, '2026-07-31'), ( 'Emon Mondal', 18000, '2026-05-31');   ----- multiple value insert
 
 
 

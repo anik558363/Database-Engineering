@@ -61,3 +61,16 @@ categoris: id, name, create_at, updated_at
 products: id, product_cat, price, name, unit , image_url, create_at, updated_at
 invoice: id, total, discount, vat, payable, customer_datails, create_at, updated_at
 invoice_products: id, products_details, qty, sales_price, create_at, updated_at
+
+
+# Understanding Table Sequence
+
+Sequence: users ---> customers ---> categoris ---> products ---> invoice ---> invoice_products
+
+
+1. users
+2. customers
+3. categoris
+4. products
+5. invoice
+6. invoice_products

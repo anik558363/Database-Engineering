@@ -1,3 +1,8 @@
+
+# Business Requirements
+
+
+
 user management:
 
 1. registration, profile, password manage, login
@@ -43,3 +48,11 @@ invoice products management:
 sales reporting:
 
 1. data ranage sales report generate
+
+
+
+
+
+
+
+

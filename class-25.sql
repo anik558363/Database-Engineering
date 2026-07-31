@@ -63,6 +63,7 @@ invoice: id, total, discount, vat, payable, customer_datails, create_at, updated
 invoice_products: id, products_details, qty, sales_price, create_at, updated_at
 
 
+
 # Understanding Table Sequence
 
 Sequence: users ---> customers ---> categoris ---> products ---> invoice ---> invoice_products

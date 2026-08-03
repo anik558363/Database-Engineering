@@ -1,0 +1,23 @@
+Database Indexing কী?
+
+1. select where, updata where, delete where(select, where)
+2. join, order by, group by
+
+
+sale inventory project এ Indexing kano joro reay?
+
+1. tables : users, categories, customers, products, invoices, invoice_products
+2. email, id, user_id
+3. user_id, customer_id, created_at
+4. invoice_products invoices, products
+5. product_id, category_id, user_id    ----> join
+
+
+
+
+postgresql এর ধারণা?
+
+
+1. b-tree (=, <, >, between, order by)   more and more ******
+2. hash (=) **
+3. gin (- full-text search) **

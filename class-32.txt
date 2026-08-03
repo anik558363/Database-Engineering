@@ -21,3 +21,86 @@ postgresql এর ধারণা?
 1. b-tree (=, <, >, between, order by)   more and more ******
 2. hash (=) **
 3. gin (- full-text search) **
+
+
+
+
+1. users
+   Login Optimize ---> email
+   Profile Data Optimize ---> email, id
+
+
+
+2. categories
+   user wise categories Optimize ---> user_id
+
+
+3. customers
+   user wise customers Optimize ---> user_id
+   customers data lookup ---> email, mobile
+
+4. products
+   user wise products Optimize ---> user_id
+   customers data lookup ---> name, category_id
+
+
+5. invoices
+   user wise products Optimize ---> user_id
+   invoices data lookup ---> created_at, customer_id
+
+
+
+6. invoice_products
+   user wise products Optimize ---> user_id
+   invoice_products data lookup ---> invoice_id, product_id
+
+
+
+without Indexing ---> 0 %
+with Indexing ---> 80 - 90%
+
+
+
+
+index make kora syntax
+
+
+single colum indexing
+
+create index index_name on table_name(column)
+create index idx_users_email on users(email)
+
+
+multiple column indexing (composite index)
+create index idx_products_user_categeory on products(user_id, category_id)
+
+
+
+
+---------------------
+
+
+apply indexing on our table
+
+
+--- done  ----
+
+
+
+-----------
+
+
+index neay kokon sabdan thak lageay beay
+
+1. small table
+2. create more, select less
+3. dublicate index
+4. more big ba less small colum
+
+
+
+--------------
+
+
+composite index
+

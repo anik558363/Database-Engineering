@@ -1,0 +1,18 @@
+Database Normalization
+
+-- data redundancy 
+-- data consistency
+-- database structure 
+
+
+
+Easy 
+
+-- logical vabeay table part koray database efficient kora
+
+
+
+Practical Example:
+
+-- Normalize Data Model (SQL)
+-- Embedded Data Model (NOSQL)

@@ -16,3 +16,12 @@ Practical Example:
 
 -- Normalize Data Model (SQL)
 -- Embedded Data Model (NOSQL)
+
+
+
+Normalization Levels
+
+
+- 1nf -- first normal form
+- 2nf -- second normal form
+- 3nf -- third normal form

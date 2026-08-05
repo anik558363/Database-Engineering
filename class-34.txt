@@ -25,3 +25,46 @@ Normalization Levels
 - 1nf -- first normal form
 - 2nf -- second normal form
 - 3nf -- third normal form
+- production system a sadaronoto 3nf pojonto kora jeay
+- bcnf - boycs codd normal form
+
+
+
+# 1nf - first normal form 
+- proteteay column a atomic value thkeay hobeay
+- akteay cell a akteay marto value thkeay beay
+
+users
+customers
+products
+categories
+invoices
+invoice_products
+
+
+
+
+second normal form (2nf)
+
+1. table oboseay 1nf a thkeay teay hobeay
+2. partial dependency thka jabeay normal
+
+
+qty -----> product + invoice
+sale_price ----> product + invoice
+
+
+tai ateay 2nf satisfied koreay
+
+
+
+Third normal form (3nf)
+
+
+1. 1nf 
+2. 2nf 
+3. 3nf
+- alda table kora hoiceay: aiteay 3nf design
+- product ---> category_id
+- product ---> user_id
+- customers ---> user_id

@@ -43,12 +43,10 @@ SELECT
     case 
 
         WHEN price::NUMERIC > 200 THEN price::NUMERIC - ( price::NUMERIC  * 0.10 )
-        WHEN price::NUMERIC > 00 THEN price::NUMERIC - ( price::NUMERIC  * 0.05 )
+        WHEN price::NUMERIC > 100 THEN price::NUMERIC - ( price::NUMERIC  * 0.05 )
         ELSE price::NUMERIC
 
     end as my_final_price
-
-
 
 
 FROM products;

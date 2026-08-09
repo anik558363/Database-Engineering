@@ -28,3 +28,32 @@ INSERT INTO sales (customer_name, category, amount, city) VALUES
 ('Rahim', 'Groceries', 1500.00, 'Barishal'),
 ('Karim', 'Electronics', 41000.00, 'Chattogram'),
 ('Tanvir', 'Furniture', 12500.00, 'Rangpur')
+
+
+
+SELECT customer_name FROM sales GROUP BY customer_name
+
+
+
+
+SELECT customer_name, sum(amount) as total FROM sales GROUP BY customer_name
+
+
+
+SELECT category, sum(amount) as total FROM sales GROUP BY category
+
+
+SELECT city, sum(amount) as total FROM sales GROUP BY city
+
+
+
+
+--- customer_name
+SELECT customer_name, sum(amount) as total FROM sales GROUP BY customer_name HAVING sum(amount) > 60000
+
+
+--- customer_name
+SELECT category, sum(amount) as total FROM sales GROUP BY category HAVING sum(amount) > 20000
+
+--- city
+SELECT city, sum(amount) as total FROM sales GROUP BY city HAVING sum(amount) > 40000

@@ -1,0 +1,1 @@
+SELECT * FROM categories FULL OUTER JOIN products on categories.id = products.category_id

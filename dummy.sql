@@ -1,6 +1,12 @@
 truncate table users cascade;
 
 
+truncate table products cascade;
+
+
+DROP Table products
+
+
 
 
 INSERT INTO users (firstName, lastName, email, mobile, pass, otp)

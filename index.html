@@ -4,46 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>z-index and variables</title>
+
+    <title>Icon Button</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
-        :root {
-            --primary-color: green;
-            --secondary-color: orange;
+        .social-media {
+            background-color: gray;
+            padding: 50px 20px;
+            text-align: center;
         }
 
-        div {
-            height: 250px;
-            width: 250px;
-        }
-
-        #div1 {
-            background: var(--primary-color);
-            position: absolute;
-            z-index: 2;
-        }
-
-        #div2 {
-            background: var(--secondary-color);
-            position: absolute;
-            left: 150px;
-            top: 150px;
-            z-index: 1;
-        }
-
-        @media screen and (max-width: 600px) {
-            :root {
-                --primary-color: black;
-                --secondary-color: red;
-            }
+        .btn {
+            border: none;
+            padding: 10px 20px;
+            font-size: 2rem;
+            border-radius: 5px;
         }
     </style>
-
 </head>
 
 <body>
-    
-    <div id="div1"></div>
-    <div id="div2"></div>
+
+<div class="social-media">
+
+    <button class="btn">
+        <i class="fa fa-facebook" style="color: #3b5998;"></i>
+    </button>
+
+    <button class="btn">
+        <i class="fa fa-youtube" style="color: #ff0000;"></i>
+    </button>
+
+</div>
+
 </body>
 
 </html>

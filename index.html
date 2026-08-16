@@ -4,45 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Icon Button</title>
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <title>List style</title>
     <style>
-        .social-media {
-            background-color: gray;
-            padding: 50px 20px;
-            text-align: center;
+        .course-list {
+            background: rgb(216, 28, 28);
+            padding: 20px;
+            color: white;
+
         }
 
-        .btn {
-            border: none;
-            padding: 10px 20px;
-            font-size: 2rem;
-            border-radius: 5px;
+        .course-list ul {
+            list-style-type: circle;
+            list-style-position: inside;
+            list-style-image: url("tick.png");
+
+
         }
+        
     </style>
 </head>
 
 <body>
-
-<div class="social-media">
-
-    <button class="btn">
-        <i class="fa fa-facebook" style="color: #3b5998;"></i>
-    </button>
-
-    <button class="btn">
-        <i class="fa fa-youtube" style="color: #ff0000;"></i>
-    </button>
-
-</div>
-
+    <div class="course-list">
+        <ul>
+            <li>HTML</li>
+            <li>css</li>
+            <li>js</li>
+            <li>jquery</li>
+        </ul>
+    </div>
 </body>
 
 </html>

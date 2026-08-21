@@ -34,6 +34,62 @@ Redis কেন ব্যবহার করা হয়?
 
 - File Cache 5-100%, Memcache 50-60%, Redis 80-90%
 
+=================================================
+
+
+Redis কীভাবে কাজ করে?
+Request ---->(Data Process  ---> Redis) ----> Response
+Request ---> Backend Clint(Python) ---> (Data Process) Redis Server ----> Backend Clint(Python) ----> Response
+
+
+Set city:'dhaka'  ----> write ram
+get city ===> 'dhaka' ---> read ram
+
+
+Redis Sadaronto single-threaded vabeay command process koreay
+aksateay oneak joteal kj na koreay
+choto -choto dorto command chaleay
+ayteay ayte fast thkeay
+
+
+
+
+
+=====================================================
+
+
+
+In-Memory Data Store কী?
+- RAM ---> YES
+- Disk ---> NO
+- RAM (In-memory) Server Bondo holeay hareay jeteay pareay ----> khop dorto
+- Disk (hdd/ssd) sadaronto sateay sql ---> dear
+
+
+- Example
+    - almareay (sql)
+    - table (in-memory data store)
+    - note/book
+
+
+
+- OTP Code
+    SET temp:otp '52145'
+    Expire temp:otp 30s
+
+
+=====================================================
+
+
+ Redis vs SQL Database 
+
+- Storage ---> sql(disk) ---> redis(RAM)
+- Model ----> sql(table, row, col) ---> redis(key-value)
+- Query ---> sql(query) ---> redis(set, get)
+- Speed ----> sql(query, 1s)-----> redis(set, get,~0sec)
+- Relationship--->sql(left/right/inner)---->redis(dictionary)
+- Best for ---> sql(permanent business data) ---> redis(cache, session, realtime)
+
 
 */
 

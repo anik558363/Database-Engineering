@@ -91,6 +91,71 @@ In-Memory Data Store কী?
 - Best for ---> sql(permanent business data) ---> redis(cache, session, realtime)
 
 
+
+=====================================================
+
+
+
+Redis Vs Mencached
+
+
+1. Data types
+    - Redis: String, List, Set, Hash, Sorted set....
+    - Mencached: String
+2. Transactions: 
+    - Redis: Yes
+    - Mencached: No    
+3. TTL:
+    - Redis: powerful
+    - Mencached: limited
+4. Persistence:
+    - Redis: Yes
+    - Mencached: No     
+
+
+5. Pub / Sub
+    - Redis: Yes
+    - Mencached: No  
+
+
+
+Redis Server and Redis Client
+
+
+- request ----  (cleint, server) ---> respones
+- Redis server
+    - Port: 6379
+    - command: set, get, expire
+    - ram: data
+    - Docker Conatiner
+
+- Redis Client
+    - python(FastApi), Python(Django) 
+    - Node (Express), Node(Nest JS)
+    - PHP (Laravel)
+    - command-line
+
+
+
+=====================================================
+
+Redis Installation
+
+1. Local PC
+2. Docker
+    - compose
+    - docker compose  up -d
+    - docker exec -it redis redis-cli
+    - docker compose  down
+
+
+
+Redis-cli procheteay
+    - docker exec -it redis redis-cli
+    - ping
+    - pong
+
+
+
+
 */
-
-
